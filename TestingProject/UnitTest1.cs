@@ -7,8 +7,14 @@ namespace TestingProject
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestingLogInFunction()
         {
+            //assert
+
+            string username = "vmeza";
+            string password = "pass";
+           
+
         }
     }
 }

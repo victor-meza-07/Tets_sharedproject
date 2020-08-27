@@ -5,7 +5,7 @@ using SharedTest.UI;
 
 namespace SharedTest.LogIn
 {
-    class LogInController
+    public class LogInController
     {
         public string username { get; set; }
         public string password { get; set; }
