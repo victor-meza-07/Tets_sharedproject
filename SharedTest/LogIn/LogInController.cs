@@ -14,47 +14,15 @@ namespace SharedTest.LogIn
 
         }
 
+        /// <summary>
+        /// Collects username and password from params and sets properties to those values.
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="password"></param>
         public void RegisterUser(string username, string password) 
         {
-            this.username = username;
-            this.password = password;
+            
         }
-
-        public void CollectUserInfo(string condition) 
-        {
-            switch (condition) 
-            {
-                case "login":
-                    break;
-                case "register":
-
-                    break;
-                default:
-                    Console.WriteLine("That is not a valid case");
-                    break;
-            }
-        }
-
-        private void RegisterUser() 
-        {
-            string username, password, confirmPass;
-            UI.UI.PrintUserNamePrompt();
-            username = Console.ReadLine();
-            UI.UI.PrintPasswordPrompt();
-            password = Console.ReadLine();
-            UI.UI.PrintConfirmPasswordPrompt();
-            confirmPass = Console.ReadLine();
-
-            Console.WriteLine("user Registered");
-        }
-
-        private string GetFunction() 
-        {
-            UI.UI.PrintMessage("Please enter the function to perform");
-            Console.WriteLine("login or register");
-            return Console.ReadLine();
-        }
-
 
         /// <summary>
         /// Tests Username and Password passed as params against object properties of the same name.
